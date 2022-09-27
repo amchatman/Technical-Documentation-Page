@@ -11,62 +11,99 @@
 
 <body>
     <main id="main-doc">
-        <section class="main-section" id="Introduction">
+       <section class="main-section" id="Introduction">
             <header>Introduction</header>
-            <p>CSS (Cascading Style Sheets) is the code that styles web content.
-                The stylesheet language CSS is used to describe how an HTML or XML page will appear. 
+            <p>Cascadeing Style Sheets(CSS)is a stylesheet language used to describe the presentation of a
+                document written in HTML or XML.CSS describes how elements should be rendered on screen, on
+                paper,in speech, or on other media.
             </p>
-            <p> CSS is not a programming language, just like HTML. It's also not a markup language. 
-                HTML elements can be styled selectively using CSS.
+            <p>CSS is amount the core language of the open web and is standardized across Web browsers according
+                to W3C specifications.Previously the development of various parts of CSS specifications was done
+                synchronouly, which allowed the versioning of the latest recommendations.
             </p>
-        </section>
-        <section class="main-section" id="Prerequisites">
-            <header>Prerequisties</header>
-            <p>This guide assume you know the following</p>
-            <ul>
-                <li>A basic understanding of HpyerText Markup Language (HTML)</li>
-                <li>A basic undertading of the World wide web.</li>
-                <li>Know how to link a stylesheet from your HTML page.</li>
-            </ul>
-        </section>
-        <section class="main-section" id="CSS_basics">
+       </section>
+       <section class="main-section" id="CSS_basics">
             <header>CSS basics</header>
-            <p>To get started with CSS open a HTML file and link it your CSS stylesheet.</p>
-            <code>p{ color:green};</code>
-            <p>The code above will change the HTML element p to the color green.</p>
-
-        </section>
-        <section class="main-section" id="Selectors">
-            <header>Selectors</header>
-        </section>
-        <section class="main-section" id="Declerations">
-            <header>Declerations</header>
-        </section>
-        <section class="main-section" id="Properties">
-            <header>Properties</header>
-        </section>
-        <section class="main-section" id="Property_Value">
-            <header>Property Value</header>
-        </section>
-        <section class="main-section" id="Selecting_multipe_elements">
-            <header>Selecting multipe elements</header>
-        </section>
-        <section class="main-section" id="Diffrent_types_of_selectors">
-            <header>Diffrent types of selectors</header>
-        </section>
-        <section class="main-section" id="Fonts_and_text">
-            <header>Fonts and text</header>
-        </section>
-        <section class="main-section" id="Box_model">
-            <header>Box model</header>
-        </section>
-        <section class="main-section" id="Centering_image">
-            <header>Centering image</header>
-        </section>
-        <section class="main-section" id="Positioning">
-            <header>Positioning</header>
-        </section>
-
+            <p>CSS(Cascadeing Style Sheets) is the code that styles web content.</p>
+            <h2>What is CSS?</h2>
+            <p>Like HTML,CSS is not a programming language.It's not a markup language either. CSS is a style sheet
+                language.CSS is what you use to selectively style HTML elements.For example,this CSS selects paragraph
+                text, setting the color to green:
+            </p>
+            <code>
+                p{
+                    color:green;
+                }
+            </code>
+       </section>
+       <section class="main-section" id="Anatomy_of_CSS_ruleset">
+            <header>Anatomy of CSS ruleset</header>
+            <p>Let's dissect the CSS code for green paragraph text to understand how it works:</p>
+            <ul>
+                <li>p is the Selector</li>
+                <li>color is the Property</li>
+                <li>gree is the Property Value</li>
+            </ul>
+            <h3>Selector</h3>
+            <p>This is the HTML element name at the start of the ruleset. It defines the elements to be
+                style.To style a diffrent element,change the selector.
+            </p>
+            <h3>Declaration</h3>
+            <p>This is a single rule like color:green;. Itspecifies which of the elements properties
+                you want to style.
+            </p>
+            <h3>Properties</h3>
+            <p>These are ways in which you can style an HTML element.In CSS you chose which propertis you 
+                want to affect in the rule.
+            </p>
+            <h3>Property Value</h3>
+            <p>To the right of the property after the colon there is the property value.This choose one
+                out of many possible apperances for a giver property.
+            </output></p>
+       </section>
+       <section class="main-section" id="Selecting_multiple_elements">
+            <header>Selecting mulitple elements</header>
+            <p>You can also select multiple elements and apply a single ruleset to all of them. Seperate 
+                multiple selectors by commas. For example:
+            </p>
+            <code>
+                p, li,h1,{
+                    color:green;
+                }
+            </code>
+       </section>
+       <section class="main-section" id="Different_type_of_selectors">
+            <header>Different type of selectors</header>
+            <p>There are many diffrent types of selectors. The examples above use elements selectors,
+                which select all elements of a given type.But we can make more specific selection as well.
+                Here are some of the most common types of selectors.
+            </p>
+            <ul>
+                <li>Element Selector</li>
+                <li>ID selector</li>
+                <li>Class selector</li>
+                <li>Attribute selecto</li>
+                <li>Pseudo-class-selector</li>
+            </ul>
+       </section>
+       <section class="main-section" id="CSS_box-model">
+            <header>CSS box model</header>
+            <p>CSS layouts is mostly based on the box model.Each box taking up space on your page has
+                properties like:
+            </p>
+            <ul>
+                <li>padding, the space around the content.</li>
+                <li>border, the solid linethat is just outside the padding</li>
+                <li>margin, the space around the outside of the border.</li>
+            </ul>
+       </section>
+       <section class="main-section" id="Positioning_styling_main_page_title">
+             <header>Positioning styling main page title</header>
+       </section>
+       <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <a href="#">MDN</a>
+       </section>
     </main>
 
 <!--JavaScript link to your js file. * Not require if your not using JavaScript-->
