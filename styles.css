@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+ font-size:25px;
+ padding:10px;
+
+}
+#navbar{
+    width:300px;
+}
+#navbar li{
+    border-top:1px solid grey;
+    font-size:20px;
+    padding:10px;
+    list-style:none;
+}
+#main-doc{
+    
+}

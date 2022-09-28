@@ -6,10 +6,22 @@
      <!--Viewport make the website responsive-->
     <meta name="viewport" content="width=device-width,initial-scale=1, viewport-fit=cover">
     <!--Css link to your stylesheet-->
-    <link rel="stylesheet" type="text/css" href="#" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
 </head>
 
 <body>
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <ul>
+            <li>Introduction</li>
+            <li>CSS basics</li>
+            <li>Anatomy of CSS ruleset</li>
+            <li>Selecting mulitple elements</li>
+            <li>Different type of selectors</li>
+            <li>CSS Box-model</li>
+            <li>Reference</li>
+        </ul>
+    </nav>
     <main id="main-doc">
        <section class="main-section" id="Introduction">
             <header>Introduction</header>
@@ -25,7 +37,7 @@
        <section class="main-section" id="CSS_basics">
             <header>CSS basics</header>
             <p>CSS(Cascadeing Style Sheets) is the code that styles web content.</p>
-            <h2>What is CSS?</h2>
+            <h3>What is CSS?</h3>
             <p>Like HTML,CSS is not a programming language.It's not a markup language either. CSS is a style sheet
                 language.CSS is what you use to selectively style HTML elements.For example,this CSS selects paragraph
                 text, setting the color to green:
@@ -85,6 +97,24 @@
                 <li>Attribute selecto</li>
                 <li>Pseudo-class-selector</li>
             </ul>
+            <cod>
+                p{
+                    color:green;
+                }
+            </cod>
+            <code>
+                #description{
+                    color:yellow;
+                }
+            </code>
+            <cod>
+                .description{
+                    color:blue;
+                }
+            </cod>
+                a:hover{
+                    color:orange;
+                }
        </section>
        <section class="main-section" id="CSS_box-model">
             <header>CSS box model</header>
@@ -96,10 +126,16 @@
                 <li>border, the solid linethat is just outside the padding</li>
                 <li>margin, the space around the outside of the border.</li>
             </ul>
+
+            <code>
+                p{
+                    padding:2px;
+                    border:3px solid red;
+                    margin:5px;
+                }
+            </code>
        </section>
-       <section class="main-section" id="Positioning_styling_main_page_title">
-             <header>Positioning styling main page title</header>
-       </section>
+       
        <section class="main-section" id="Reference">
             <header>Reference</header>
             <a href="#">MDN</a>
