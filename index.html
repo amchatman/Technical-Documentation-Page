@@ -3,9 +3,7 @@
 <head>
     <title>CSS technical Document</title>
     <meta charset="utf-8">
-     <!--Viewport make the website responsive-->
     <meta name="viewport" content="width=device-width,initial-scale=1, viewport-fit=cover">
-    <!--Css link to your stylesheet-->
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
 </head>
 
@@ -13,13 +11,13 @@
     <nav id="navbar">
         <header>CSS Documentation</header>
         <ul>
-            <li>Introduction</li>
-            <li>CSS basics</li>
-            <li>Anatomy of CSS ruleset</li>
-            <li>Selecting mulitple elements</li>
-            <li>Different type of selectors</li>
-            <li>CSS Box-model</li>
-            <li>Reference</li>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#CSS_basics">CSS basics</a></li>
+            <li><a class="nav-link" href="#Anatomy_of_CSS_ruleset">Anatomy of CSS ruleset</a></li>
+            <li><a class="nav-link" href="#Selecting_multiple_elements">Selecting mulitple elements</a></li>
+            <li><a class="nav-link" href="#Different_type_of_selectors">Different type of selectors</a></li>
+            <li><a class="nav-link" href="#CSS_box_model">CSS Box model</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
         </ul>
     </nav>
     <main id="main-doc">
@@ -71,7 +69,7 @@
             <h3>Property Value</h3>
             <p>To the right of the property after the colon there is the property value.This choose one
                 out of many possible apperances for a giver property.
-            </output></p>
+            </p>
        </section>
        <section class="main-section" id="Selecting_multiple_elements">
             <header>Selecting mulitple elements</header>
@@ -97,26 +95,26 @@
                 <li>Attribute selecto</li>
                 <li>Pseudo-class-selector</li>
             </ul>
-            <cod>
+            <code>
                 p{
                     color:green;
                 }
-            </cod>
+            </code>
             <code>
                 #description{
                     color:yellow;
                 }
             </code>
-            <cod>
+            <code>
                 .description{
                     color:blue;
                 }
-            </cod>
+            </code>
                 a:hover{
                     color:orange;
                 }
        </section>
-       <section class="main-section" id="CSS_box-model">
+       <section class="main-section" id="CSS_box_model">
             <header>CSS box model</header>
             <p>CSS layouts is mostly based on the box model.Each box taking up space on your page has
                 properties like:
@@ -138,11 +136,9 @@
        
        <section class="main-section" id="Reference">
             <header>Reference</header>
-            <a href="#">MDN</a>
+            <p>Find more about CSS here <a href="#" class="reference-link">MND</a></p>
+            
        </section>
     </main>
-
-<!--JavaScript link to your js file. * Not require if your not using JavaScript-->
-<script src="#"></script>
 </body>
 </html>
